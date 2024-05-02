@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const controllerMusic = require('./../controllers/musics')
+const {random} = require('./..:controllers/musics')
 
 router.get('/', (req, res) => {
     res.status(200).json({ success: 'RACINE API' });
