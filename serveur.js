@@ -9,10 +9,11 @@ const router = require('./routes/routes.js');
 const options = require('./swagger.json')
 const specs = swaggerJsdoc(options)
 
-app.use(cors())
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(`/api/${version}/`, router);
+app.use(cors())
 
 // Servir la documentation Swagger UI
 app.use(`/api-docs`, swaggerUi.serve, swaggerUi.setup(swaggerDocument));
