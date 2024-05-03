@@ -1,13 +1,7 @@
-const { Sequelize, DataTypes } = require('sequelize');
+const { DataTypes } = require('sequelize');
+const db = require('./../db/dbconnect');
 
-const sequelize = new Sequelize('database', 'username', 'password', {
-  host: 'localhost',
-  dialect: 'sqlite',
-  storage: './DB/database.sqlite',
-  database: './DB/database.sqlite',
-});
-
-const Music = sequelize.define(
+const Music = db.define(
   'Music',
   {
     // Model attributes are defined here
@@ -33,13 +27,6 @@ const Music = sequelize.define(
       allowNull: false
     }
   },
-  {
-    tableName: 'musics',
-  }
 );
 
-(async () => {
-
-
-})();
 module.exports = Music;
