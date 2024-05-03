@@ -1,4 +1,3 @@
-//const data = require("./../models/data.json");
 const Music = require("../models/Musics");
 const controllerMusic =
 {

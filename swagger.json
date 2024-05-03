@@ -40,7 +40,7 @@
     },
     "/api/v1/musics": {
       "get": {
-        "summary": "Obtenir la liste des musiques",
+        "summary": "Obtenir une liste des musiques",
         "responses": {
           "200": {
             "description": "Succès",

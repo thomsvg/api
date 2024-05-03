@@ -4,7 +4,6 @@ const db = require('./../db/dbconnect');
 const Music = db.define(
   'Music',
   {
-    // Model attributes are defined here
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
