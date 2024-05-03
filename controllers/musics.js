@@ -51,4 +51,4 @@ const controllerMusic =
     }
 }
 
-module.exports = controllerMusic
+module.exports = controllerMusic;
