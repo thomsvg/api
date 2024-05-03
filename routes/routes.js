@@ -15,6 +15,8 @@ router.get('/musics', controllerMusic.find);
 
 router.post('/musics', controllerMusic.create);
 
+router.delete('/musics/:id', controllerMusic.delete);
+
 router.get('/musics/:id', controllerMusic.findById);
 
 router.get('/musics/random', controllerMusic.random);
